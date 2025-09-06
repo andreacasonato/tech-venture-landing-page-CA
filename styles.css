@@ -242,6 +242,11 @@ main h1 {
     max-width: 60%;
 }
 
+.main__image {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+}
 
 /* ========== FEATURES SECTION ========== */
 section {
@@ -333,6 +338,12 @@ section {
     text-align: center;
 }
 
+.history__image {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+}
+
 /* ========== FOOTER ========== */
 footer {
     background-color: #1d293b;
@@ -390,4 +401,141 @@ h4 {
 
 .footer__lower-section span {
     font-size: 0.75rem;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* ========== SECTIONS' PADDING ========== */
+@media screen and (max-width: 1220px) {
+    section {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    main {
+        padding: 3rem 1.5rem;
+    }
+
+    section {
+        padding: 3rem 1.5rem;
+    }
+
+    footer {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* ========== Header Section ========== */
+@media screen and (max-width: 550px) {
+    .header {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header ul {
+        margin-top: 2rem;
+    }
+}
+
+/* ========== Main Section ========== */
+@media screen and (max-width: 1220px) {
+    .main {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__left-section {
+        text-align: center;
+    }
+
+    .main__left-section div {
+        margin-bottom: 2rem;
+    }
+
+    .main__left-section h1 {
+        max-width: 100%;
+    }
+
+    .main__paragraph {
+        max-width: 100%;
+    }
+}
+
+/* ========== Features Section ========== */
+@media screen and (max-width: 1200px) {
+    .features {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .features {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features__box {
+        width: 100%;
+    }
+}
+
+/* ========== History Section ========== */
+@media screen and (max-width: 1330px) {
+    .history__divs {
+        flex-wrap: wrap;
+    }
+
+    .history__divs img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .history__numbers {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .history__text h2 {
+        text-align: left;
+    }
+}
+
+/* ========== Footer ========== */
+
+@media screen and (max-width: 900px) {
+    .footer__upper-section {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .footer__upper-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__upper-section-menu {
+        margin-top: 2.5rem;
+    }
+
+    .footer__upper-section-contact {
+        margin-top: 1.4rem;
+    }
+
+    .footer__lower-section {
+        justify-content: flex-start;
+    }
 }
